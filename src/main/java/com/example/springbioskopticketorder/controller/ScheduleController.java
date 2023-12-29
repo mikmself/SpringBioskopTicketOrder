@@ -25,7 +25,7 @@ public class ScheduleController {
         return service.saveSchedules(schedules);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<Schedule>> findAllSchedules() {
         return service.getSchedules();
     }

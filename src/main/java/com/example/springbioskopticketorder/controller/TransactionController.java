@@ -25,7 +25,7 @@ public class TransactionController {
         return service.saveTransactions(transactions);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<Transaction>> findAllTransactions() {
         return service.getTransactions();
     }

@@ -25,7 +25,7 @@ public class FilmController {
         return service.saveFilms(films);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<Film>> findAllFilms() {
         return service.getFilms();
     }

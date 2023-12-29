@@ -25,7 +25,7 @@ public class UserController {
         return service.saveUsers(users);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<User>> findAllUsers() {
         return service.getUsers();
     }

@@ -25,7 +25,7 @@ public class TheaterController {
         return service.saveTheaters(theaters);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<Theater>> findAllTheaters() {
         return service.getTheaters();
     }

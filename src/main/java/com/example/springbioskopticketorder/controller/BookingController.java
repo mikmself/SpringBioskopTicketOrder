@@ -25,7 +25,7 @@ public class BookingController {
         return service.saveBookings(bookings);
     }
 
-    @GetMapping("/all")
+    @GetMapping("")
     public ApiResponse<List<Booking>> findAllBookings() {
         return service.getBookings();
     }
